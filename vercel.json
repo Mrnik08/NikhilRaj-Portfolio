@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {}
+    }
+  ],
+  "routes": [
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "/manifest.json", "dest": "/manifest.json" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}

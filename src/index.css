@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glass card */
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl;
+}
+
+/* Premium gradient bg for app */
+.app-bg {
+  background: radial-gradient(1200px 500px at 20% -10%, rgba(236,72,153,.08), transparent 60%),
+              radial-gradient(1000px 500px at 120% 110%, rgba(99,102,241,.10), transparent 50%),
+              linear-gradient(120deg, rgb(2,6,23) 0%, rgb(2,6,23) 100%);
+}
+
+/* PDF export theme (clean, A4-friendly) */
+.pdf-light {
+  background: #fff !important;
+  color: #000 !important;
+  box-shadow: none !important;
+}
+.pdf-light * {
+  color: #000 !important;
+  background: transparent !important;
+  border-color: #0001 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+.pdf-light .no-print {
+  display: none !important;
+}
+
+/* Two-column resume grid only in pdf */
+.pdf-light .pdf-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 16px !important;
+}
+
+/* Scroll snapping sections */
+.snap-parent {
+  scroll-snap-type: y mandatory;
+}
+.snap-child {
+  scroll-snap-align: start;
+}
+
+/* Magnetic hover helpers (no colors here) */
+.magnetic {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+/* index.css or global.css */
+.pdf-only {
+  display: none;
+}
+.pdf-light .pdf-only {
+  display: block !important;
+}
+/* Add these CSS classes in your global.css (or index.css) */
+@media screen {
+  .pdf-only { display: none !important; }   /* Hide in website */
+}
+@media print {
+  .screen-only { display: none !important; } /* Hide in PDF */
+  .pdf-only { display: block !important; }   /* Show only in PDF */
+}
+

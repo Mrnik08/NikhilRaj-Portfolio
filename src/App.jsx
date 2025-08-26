@@ -64,7 +64,7 @@ export default function App() {
               <Linkedin size={18} />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/Mrnik08"
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-lg bg-white/5 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-fuchsia-500 hover:text-white transition"

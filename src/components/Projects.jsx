@@ -25,7 +25,7 @@ const data = [
   {
     title: "Portfolio Website",
     desc: "React, Tailwind CSS • Personal portfolio showcasing projects and skills.",
-    link: "https://nikhilRaj-portfolio.vercel.app/"
+    link: "https://nikhilraj08portfolio.vercel.app/"
   },
   {
     title: "RoupanNaturals",

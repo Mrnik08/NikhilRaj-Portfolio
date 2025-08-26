@@ -86,12 +86,12 @@ export default function Hero() {
               <Linkedin size={18} /> LinkedIn
             </a>
             <a
-              href="https://spidermentorlms.vercel.app/"
+              href="https://nikhilraj08portfolio.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 hover:text-fuchsia-300"
             >
-              <Globe size={18} /> spidermentorlms.vercel.app
+              <Globe size={18} /> nikhilraj08portfolio.vercel.app
             </a>
           </div>
 
@@ -127,12 +127,12 @@ export default function Hero() {
                   <Linkedin size={18} /> LinkedIn
                 </a>
                 <a
-                  href="https://spidermentorlms.vercel.app/"
+                  href="https://nikhilraj08portfolio.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="block flex items-center gap-2 hover:text-fuchsia-300"
                 >
-                  <Globe size={18} /> spidermentorlms.vercel.app
+                  <Globe size={18} /> nikhilraj08portfolio.vercel.app
                 </a>
               </div>
             )}

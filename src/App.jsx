@@ -19,9 +19,8 @@ export default function App() {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  const handleDownload = () => {
-    window.dispatchEvent(new CustomEvent("export-pdf"));
-  };
+  // Instead of generating, directly download the uploaded PDF
+  const resumeFile = "/NIKHIL RAJ - Resume-.pdf"; // Place the PDF inside your project's public folder
 
   return (
     <div className="font-display app-bg min-h-screen">
@@ -72,15 +71,16 @@ export default function App() {
             >
               <Github size={18} />
             </a>
-            <button
-              onClick={handleDownload}
+            <a
+              href={resumeFile}
+              download="Nikhil_Raj_Resume.pdf"
               className="ml-1 hidden sm:inline-flex items-center gap-2 px-4 py-2 
                          rounded-xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 
                          text-white font-semibold shadow-lg shadow-fuchsia-500/30 
                          hover:scale-105 transition"
             >
               <Download size={16} /> <span>Resume</span>
-            </button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -105,15 +105,13 @@ export default function App() {
               <a className="hover:text-fuchsia-300 transition" href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
               <a className="hover:text-fuchsia-300 transition" href="#experience" onClick={() => setMenuOpen(false)}>Experience</a>
               <a className="hover:text-fuchsia-300 transition" href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-              <button
-                onClick={() => {
-                  handleDownload();
-                  setMenuOpen(false);
-                }}
+              <a
+                href={resumeFile}
+                download="Nikhil_Raj_Resume.pdf"
                 className="mt-2 flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 text-white shadow-md shadow-fuchsia-500/30"
               >
                 <Download size={16} /> Resume PDF
-              </button>
+              </a>
             </motion.nav>
           )}
         </AnimatePresence>

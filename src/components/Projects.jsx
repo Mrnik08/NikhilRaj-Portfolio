@@ -15,6 +15,7 @@ const data = [
     title: "BloodVault — Online Blood Bank",
     desc: "Donor/Recipient flows, real-time stock, admin dashboard.",
     tech: ["React", "Node", "Express", "MySQL", "JWT"],
+    link: "https://blood-donation-frontend-wheat.vercel.app/"
   },
   {
     title: "SpiderMentor — LMS",
@@ -30,7 +31,7 @@ const data = [
   {
     title: "RoupanNaturals",
     desc: "Full-Stack Project • E-commerce website with Stripe payment gateway & deployment.",
-    // link: "https://nikhil-portfolio.vercel.app/"
+   link: "https://www.roupannaturals.com"
   }
 ];
 

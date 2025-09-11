@@ -26,11 +26,13 @@ const data = [
   {
     title: "Portfolio Website",
     desc: "React, Tailwind CSS • Personal portfolio showcasing projects and skills.",
-    link: "https://nikhilraj08portfolio.vercel.app/"
+    tech: ["React", "Tailwind CSS", "Framer Motion", "AOS"],
+    link: "https://nikhil-raj-portfolio.vercel.app/"
   },
   {
-    title: "RoupanNaturals",
-    desc: "Full-Stack Project • E-commerce website with Stripe payment gateway & deployment.",
+    title: "Roupan Naturals",
+    desc: "Full-Stack Project • E-commerce website with UPI payment gateway & deployment.",
+    tech: ["React", "Node", "Express", "MySQL", "Tailwind CSS", "JWT" ],
    link: "https://www.roupannaturals.com"
   }
 ];

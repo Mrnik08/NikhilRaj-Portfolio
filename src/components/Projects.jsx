@@ -33,7 +33,7 @@ const data = [
     title: "Roupan Naturals",
     desc: "Full-Stack Project • E-commerce website with UPI payment gateway & deployment.",
     tech: ["React", "Node", "Express", "MySQL", "Tailwind CSS", "JWT" ],
-   link: "https://www.roupannaturals.com"
+   link: "https://www.roupannaturals.in"
   }
 ];
 

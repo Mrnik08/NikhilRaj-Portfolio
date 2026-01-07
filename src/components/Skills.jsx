@@ -6,9 +6,9 @@ import { Code2, Cpu, Database, Layout, Wrench } from "lucide-react";
 
 const cards = [
   { icon: <Code2 size={22} />, title: "Programming", items: ["Java", "Python", "JavaScript"] },
-  { icon: <Layout size={22} />, title: "Frontend", items: ["React", "Tailwind", "HTML", "CSS", "Bootstrap"] },
+  { icon: <Layout size={22} />, title: "Frontend", items: ["React","Next.js", "Tailwind", "HTML", "CSS", "Bootstrap"] },
   { icon: <Database size={22} />, title: "Databases", items: ["Oracle SQL", "MySQL", "MongoDB"] },
-  { icon: <Cpu size={22} />, title: "Backend", items: ["JDBC", "Servlets", "Hibernate", "Spring Boot", "Node.js", "Express.js","API Development"] },
+  { icon: <Cpu size={22} />, title: "Backend", items: [ "JWT Authentication", "Node.js", "Express.js","RESTful API Development"] },
   { icon: <Wrench size={22} />, title: "Tools", items: ["Git", "GitHub", "Eclipse", "VS Code", "Postman"] },
 ];
 
